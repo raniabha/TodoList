@@ -5,7 +5,7 @@ export default class ToDoList extends Component {
         super(props);
         this.state = {
             item : '',
-            itemlist: JSON.parse(localStorage.getItem("todolist"))
+            itemlist: JSON.parse(localStorage.getItem("todolist")) ? JSON.parse(localStorage.getItem("todolist")) : []
             // itemlist: [{id: 0.24214, value: "banana"}, {id: 0.784831, value: "kjdbflkj"}]
         }
     }
